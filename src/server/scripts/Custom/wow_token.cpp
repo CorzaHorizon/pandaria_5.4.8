@@ -59,7 +59,7 @@ public:
 
                 std::ostringstream coins_amount_message_ru, coins_amount_message_en;
                 coins_amount_message_ru << "Спасибо за помощь проекту Pandaria 5.4.8, вы только что получили очков пожертвования: " << Coins/10000;
-                coins_amount_message_en << "Thanks for helping the Pandaria 5.4.8 project, you just received donate coins: " << Coins/10000;
+                coins_amount_message_en << "Thanks for helping the SoloPanda project, you just received donate coins: " << Coins/10000;
                 ChatHandler(player->GetSession()).SendSysMessage(GetText(player, coins_amount_message_ru.str().c_str(), coins_amount_message_en.str().c_str()));
                 player->SaveToDB();
             }

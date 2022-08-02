@@ -37,7 +37,7 @@ public:
 
             if (player->IsInWorld() && sWorld->getBoolConfig(CONFIG_BONUS_TIME_REWARD))
             {
-                ChatHandler(player->GetSession()).PSendSysMessage(GetText(player, "Бонус за проведенное в игре время.", "Bonus for played time."));
+                ChatHandler(player->GetSession()).PSendSysMessage(GetText(player, "Бонус за проведенное в игре время.", "접속 시간 보상을 받았습니다."));
 
                 PreparedStatement* stmt = FusionCMSDatabase.GetPreparedStatement(FUSION_UPD_BATTLEPAY_VP_COINS);
                 stmt->setUInt32(0, sConfigMgr->GetIntDefault("PlayedTimeReward.vp", 0));

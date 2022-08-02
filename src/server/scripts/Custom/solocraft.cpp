@@ -411,7 +411,7 @@ public:
         {
             if (SoloCraftAnnounceModule)
             {
-                ChatHandler(player->GetSession()).SendSysMessage(GetText(player, "|cff4CFF00СолоКрафт система|r активирована.", "|cff4CFF00SoloCraft system|r active."));
+                ChatHandler(player->GetSession()).SendSysMessage(GetText(player, "|cff4CFF00СолоКрафт система|r активирована.", "|cff4CFF00SoloCraft 시스템|r 활성화."));
             }
         }
     }
